@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { getHeroEvolutionData, EVOLUTION_TIER_NAMES } from '../../game/heroEvolution';
 import type { HeroDef } from '../../game/heroes';

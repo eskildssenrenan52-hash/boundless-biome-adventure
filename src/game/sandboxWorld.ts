@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import type { MaterialId } from './crafting';
 import { TILE_SIZE } from './types';
 

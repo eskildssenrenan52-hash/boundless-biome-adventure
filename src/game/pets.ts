@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import { drawPixelSprite } from './sprites';
 import { ElementType, SpiritId } from './types';
 

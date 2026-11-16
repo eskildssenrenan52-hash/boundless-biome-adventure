@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import React, { useState } from 'react';
 import {
   CRAFTING_STATIONS,

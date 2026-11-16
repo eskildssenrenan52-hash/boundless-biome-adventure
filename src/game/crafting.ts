@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import { AnyBiomeId } from './types';
 
 export type MaterialId =

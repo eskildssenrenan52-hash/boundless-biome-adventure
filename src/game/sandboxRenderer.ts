@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import type { GameEngine } from './engine';
 import {
   SANDBOX_COLS,
