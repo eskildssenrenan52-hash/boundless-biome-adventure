@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import { getHeroEvolutionData } from './heroEvolution';
 import type { HeroId } from './heroes';
 

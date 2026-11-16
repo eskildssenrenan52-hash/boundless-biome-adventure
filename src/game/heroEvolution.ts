@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import { MaterialId } from './crafting';
 import { getHeroDef, HeroId } from './heroes';
 

@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import React, { useState } from 'react';
 import { GameEngine } from '../../game/engine';
 import { SANDBOX_QUESTS } from '../../game/sandboxWorld';

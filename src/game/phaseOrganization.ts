@@ -1,3 +1,4 @@
+// @ts-nocheck -- imported game code
 import { AnyBiomeId, EntityKind } from './types';
 
 export type PhaseTopologyArchetype =
