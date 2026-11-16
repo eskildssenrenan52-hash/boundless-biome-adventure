@@ -1,23 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { GameShell } from "@/components/game/GameShell";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  ssr: false,
+  head: () => ({
+    meta: [
+      { title: "Aethelgard: Abismo de Cinzas" },
+      { name: "description", content: "Plataforma de ação 2D em pixel art com mundos conectados, heróis elementais, sandbox gigante e chefões épicos." },
+      { property: "og:title", content: "Aethelgard: Abismo de Cinzas" },
+      { property: "og:description", content: "Plataforma de ação 2D em pixel art com mundos conectados, heróis elementais, sandbox gigante e chefões épicos." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="game-root h-screen w-screen overflow-hidden select-none">
+      <GameShell />
     </div>
   );
 }
